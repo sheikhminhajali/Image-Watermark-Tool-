@@ -1,102 +1,96 @@
-🖼️ Image Watermark Tool
+# 🖼️ Image Watermark Tool
 
-A simple Python script to batch-process images and add a watermark using the Python Imaging Library (PIL).
+A simple Python script to add a watermark to multiple images in a folder using the Python Imaging Library (PIL).
 
-📌 Description
+---
 
-The Image Watermark Tool allows you to automatically add a watermark image to all .jpg and .png files in a folder. The watermark is resized dynamically and placed neatly at the bottom-right corner of each image.
+## 📌 Description
 
-🚀 Features
+This project allows you to automatically add a watermark image to all `.jpg` and `.png` files inside a specified folder. The watermark is resized dynamically and placed at the bottom-right corner of each image.
 
-Batch processing of images in a folder
+---
 
-Supports .jpg and .png formats
+## 🚀 Features
 
-Automatically resizes watermark
+- Batch processing of images  
+- Supports `.jpg` and `.png` formats  
+- Automatically resizes watermark  
+- Positions watermark at bottom-right  
+- Creates a separate `output/` folder for results  
 
-Places watermark at bottom-right with padding
+---
 
-Creates a separate output/ folder for processed images
+## 🛠️ Technologies Used
 
-🛠️ Technologies Used
+- Python 3  
+- PIL (Python Imaging Library)
 
-Python 3
+---
 
-PIL (Python Imaging Library)
-
-📂 Project Structure
+## 📂 Project Structure
 .
-├── watermark.py        # Main script
-├── requirements.txt    # Dependencies
-├── README.md           # Documentation
-⚙️ Installation
+├── watermark.py
+├── requirements.txt
+└── README.md
 
-Clone the repository:
 
+---
+
+## ⚙️ Installation
+
+1. Clone the repository:
+
+```bash
 git clone https://github.com/your-username/image-watermark.git
 cd image-watermark
+```
 
-Install dependencies:
+2. Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-⚠️ Note:
-If PIL==1.1.6 does not install properly (it is outdated), use:
-
+⚠️ Note: PIL==1.1.6 is outdated. If installation fails, use:
+```bash
 pip install pillow
-▶️ Usage
+```
+
+## ▶️ Usage
 
 Run the script:
-
+```bash
 python3 watermark.py
+```
+Enter the required inputs when prompted:
 
-You will be prompted to enter:
+Folder Path → Path containing images
 
-📁 Folder Path → Path containing images
+Watermark Path → Path to watermark image (PNG recommended)
 
-🖼️ Watermark Path → Path to watermark image (PNG recommended)
 
-💡 Example
+## 💡 Example
+```bash
 Enter Folder Path: /home/user/images
 Enter Watermark Path: logo.png
-📤 Output
+```
 
-A new folder named output/ will be created inside your image directory.
+## 📤 Output
 
-All processed images will be saved there with the watermark applied.
+A new folder named output/ will be created inside the given directory
 
-⚙️ How It Works
+Watermarked images will be saved in the output/ folder
 
-Reads all images in the given folder
+## ⚙️ How It Works
 
-Resizes watermark to 8% of image width
+- Reads all files from the given folder
 
-Places watermark at bottom-right corner with margin
+- Filters .jpg and .png images
 
-Preserves image quality during saving
+- Resizes watermark to 8% of image width
 
-✏️ Customization
+- Places watermark at bottom-right with padding
 
-You can modify watermark.py to:
+- Saves optimized output image
 
-Change watermark size ratio
 
-Adjust position (top-left, center, etc.)
-
-Add transparency effects
-
-Support more file formats
-
-⚠️ Requirements
-PIL==1.1.6
-
-👉 Recommended (modern alternative):
-
-Pillow
-👤 Author
-
-MD Minhaj Ali
-
-📜 License
-
-This project is open-source and free to use.
