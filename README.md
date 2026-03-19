@@ -93,4 +93,30 @@ Watermarked images will be saved in the output/ folder
 
 - Saves optimized output image
 
+## ✏️ Customization
 
+You can modify watermark.py to:
+
+- Change watermark size
+- Adjust position
+- Add transparency
+- Support more formats
+
+## ⚠️ Requirements
+```bash
+PIL==1.1.6
+```
+Recommended alternative:
+```bash
+Pillow
+```
+
+## 👤 Author
+
+MD Minhaj Ali
+
+## 📜 License
+
+This project is open-source and free to use.
+
+---
